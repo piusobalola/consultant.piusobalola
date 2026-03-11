@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pius Obalola | IT Consultant Resume</title>
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text-main: #1a1a1a;
+            --text-light: #666666;
+            --accent: #2563eb;
+            --border: #eaeaea;
+        }
+
+        [data-theme="dark"] {
+            --bg: #121212;
+            --text-main: #e5e5e5;
+            --text-light: #a3a3a3;
+            --accent: #60a5fa;
+            --border: #262626;
+        }
+
+        body {
+            font-family: "Inter", -apple-system, system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-main);
+            background: var(--bg);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        /* Toolbar for JS actions */
+        .toolbar {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            background: var(--bg);
+            color: var(--text-main);
+            cursor: pointer;
+            font-size: 0.8rem;
+            border-radius: 4px;
+            transition: 0.2s;
+        }
+
+        button:hover {
+            border-color: var(--accent);
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 20px;
+        }
+
+        h1 { font-size: 2.2rem; margin: 0; letter-spacing: -0.03em; }
+        
+        .contact-info {
+            display: flex;
+            gap: 15px;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin: 10px 0;
+        }
+
+        .summary { font-size: 1.1rem; font-weight: 500; color: var(--accent); margin-bottom: 10px; }
+
+        h2 {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--text-light);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+            margin: 40px 0 20px;
+        }
+
+        .job { margin-bottom: 30px; }
+        .job-header { display: flex; justify-content: space-between; align-items: baseline; }
+        .company { font-weight: 700; font-size: 1.1rem; }
+        .date { font-size: 0.85rem; color: var(--text-light); }
+        .job-title { font-weight: 500; color: var(--text-light); margin-bottom: 8px; }
+
+        ul { padding-left: 20px; margin: 10px 0; }
+        li { margin-bottom: 5px; font-size: 0.95rem; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-item strong { display: block; font-size: 0.75rem; text-transform: uppercase; color: var(--text-light); margin-bottom: 4px; }
+        .skill-item p { margin: 0; font-size: 0.9rem; }
+
+        @media print {
+            .toolbar { display: none; }
+            body { padding: 0; background: white !important; color: black !important; }
+            [data-theme="dark"] { --bg: #fff; --text-main: #000; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="toolbar">
+        <button id="themeToggle">Toggle Dark Mode</button>
+        <button onclick="window.print()">Download PDF</button>
+    </div>
+
+    <header>
+        <h1>Pius Obalola [cite: 1]</h1>
+        <div class="contact-info">
+            <span>Lagos [cite: 2]</span>
+            <span>09077007672 [cite: 2]</span>
+            <span>obapius7@gmail.com [cite: 2]</span>
+        </div>
+        <div class="summary">IT Manager [cite: 3]</div>
+        <p>I bridge the gap between complex technical debt and business growth. [cite: 4] With over 8 years of experience, I've helped organizations—from agile fintech startups to established microfinance banks—modernize infrastructure efficiently. [cite: 5]</p>
+    </header>
+
+    <h2>Experience</h2>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="company">Skillzcamp [cite: 8]</span>
+            <span class="date">01/2020 - Present [cite: 10]</span>
+        </div>
+        <div class="job-title">Co-Founder & Director of Technology [cite: 9]</div>
+        <ul>
+            <li>Built the end-to-end product roadmap and technical strategy from MVP to scale. [cite: 11]</li>
+            <li>Maintained 99.9% uptime for a growing user base. [cite: 11]</li>
+            <li>Designed a lean, high-availability cloud architecture to scale without exponential hosting costs. [cite: 12]</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="company">Pingworld Global LLC [cite: 13]</span>
+            <span class="date">06/2024 - 02/2026 [cite: 15]</span>
+        </div>
+        <div class="job-title">Senior IT Consultant (Remote) [cite: 14]</div>
+        <ul>
+            <li>Overhauled aging infrastructure for manufacturing, boosting production uptime by 25%. [cite: 16]</li>
+            <li>Architected AWS migration for a scaling fintech, saving $15k in monthly cloud spend. [cite: 17]</li>
+            <li>Acted as interim VCISO, achieving SOC2 Type II compliance in 6 months. [cite: 18]</li>
+            <li>Delivered 3-year technology roadmaps, turning IT into a strategic asset. [cite: 19]</li>
+        </ul>
+    </div>
+
+    <div class="job">
+        <div class="job-header">
+            <span class="company">Manny Microfinance Bank Ltd [cite: 20]</span>
+            <span class="date">01/2020 - 04/2023 [cite: 22]</span>
+        </div>
+        <div class="job-title">Senior IT SysOps [cite: 21]</div>
+        <ul>
+            <li>Managed core cloud infrastructure ensuring 99.9% uptime for banking services. [cite: 23]</li>
+            <li>Automated the release process to accelerate feature deployment. [cite: 24]</li>
+            <li>Maintained the backbone of the bank's IT environment and network. [cite: 26]</li>
+            <li>Reduced failure response times by 30% through improved monitoring. [cite: 27]</li>
+        </ul>
+    </div>
+
+    <h2>Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-item">
+            <strong>Cloud & DevOps</strong>
+            <p>AWS (Professional), GCP, Azure, Terraform, Kubernetes, Docker, Ansible. [cite: 58, 59]</p>
+        </div>
+        <div class="skill-item">
+            <strong>Security</strong>
+            <p>Zero-Trust, SOC2, ISO 27001, IAM, NIST, SIEM, Vulnerability Management. [cite: 60]</p>
+        </div>
+        <div class="skill-item">
+            <strong>Governance</strong>
+            <p>ITIL v4, COBIT, TOGAF, Agile/Scrum, SDLC. [cite: 62]</p>
+        </div>
+        <div class="skill-item">
+            <strong>Education</strong>
+            <p>B.Sc. Computer Science/Statistics (UI) [cite: 49, 50]</p>
+        </div>
+    </div>
+
+    <script>
+        // Theme Toggle Logic
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+
+        themeToggle.addEventListener('click', () => {
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                themeToggle.textContent = 'Toggle Dark Mode';
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                themeToggle.textContent = 'Toggle Light Mode';
+            }
+        });
+    </script>
+</body>
+</html>
